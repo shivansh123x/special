@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome, Bestie!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome, Tessa!</h1>
+        <p>While you were not awake, I made this in my free time. Hope it makes you smile!</p>
+
+        <h2>How are you feeling today?</h2>
+        <form>
+            <label>
+                <input type="radio" name="mood" value="happy"> Happy 😊
+            </label>
+            <label>
+                <input type="radio" name="mood" value="sad"> Sad 😔
+            </label>
+        </form>
+    </div>
+
+    <div class="gallery">
+       <h2>here some coffee for you 😆</h2>
+        <img src="https://static.vecteezy.com/system/resources/previews/049/632/997/non_2x/heart-shaped-latte-art-in-a-white-cup-with-coffee-beans-isolated-on-wooden-table-side-view-of-taiwan-baked-food-photo.jpg" height="400" alt="Heart-shaped coffee latte">
+        
+    </div>
+
+    <div class="places">
+        <h1>The places you want to visit 💗</h1>
+
+        <div class="place">
+            <h2>Carolina Beach</h2>
+            <p>Carolina Beach is a town on the coast of North Carolina. Along the Cape Fear River, Carolina Beach State Park is home to fishing spots and the Flytrap Trail, named for the carnivorous plants along its path.</p>
+            <img src="https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcS81Bbx6fkkJPLevOd6uFT5oqeDYgSoPG9Eauid4cFdT3T_fY7LsOMRiP0TkVW9yPEn9wJlyjLekY4sJbrp3Rsou6Q2AiQNNld1aiqGYA" height="300" alt="Carolina Beach">
+        </div>
+
+        <div class="place">
+            <h2>Myrtle Beach</h2>
+            <p>Myrtle Beach, a city and vacation resort on South Carolina’s Atlantic coast, is the hub of the Grand Strand, a 60-mile string of beaches. It’s also known for its celebrity-designed golf courses. Along its beachfront boardwalk are arcades, souvenir stands, and restaurants, as well as the old-fashioned Family Kingdom amusement park and the SkyWheel, one of the country’s tallest Ferris wheels.</p>
+            <img src="https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcTncmNvsjzpKcOa52X3_e8C9oMJVjGIOFAGKhuBjU_93PX7TR0TnG43_0f-kq-yRxH2D5uwU9dE94NCXJuLZh-SWZL1ErUt9bDc-axL0A" height="300" alt="Myrtle Beach">
+        </div>
+    </div>
+    <script>
+        function redirectToPlace(event) {
+            event.preventDefault();
+            let inputText = document.getElementById("inputText").value.toLowerCase();
+            
+            if (inputText.includes("carolina")) {
+                window.location.href = "carolina.html";
+            } else if (inputText.includes("myrtle")) {
+                window.location.href = "myrtle.html";
+            } else {
+                alert("Please enter a recognized place!");
+            }
+        }
+        
+    function redirectToPlace(event) {
+        event.preventDefault(); // Prevents default form submission
+
+        let inputText = document.getElementById("inputText").value.toLowerCase();
+
+        if (inputText.includes("carolina")) {
+            window.location.href = "carolina.html";
+        } else if (inputText.includes("myrtle")) {
+            window.location.href = "myrtle.html";
+        } else {
+            alert("Always here for you 😊");
+        }
+    }
+
+    // Adding event listener to the submit button
+    document.addEventListener("DOMContentLoaded", function () {
+        document.querySelector("button[type='submit']").addEventListener("click", redirectToPlace);
+    });
+
+    // Personalized welcome message on page load
+    document.addEventListener("DOMContentLoaded", function () {
+        alert("Hey Tessa! You're amazing, and I hope today brings you joy! 💖");
+    });
+
+    // Compliment Generator
+    function showCompliment() {
+        const compliments = [
+            "Your smile brightens the world! ✨",
+            "You are loved and appreciated! 💕",
+            "You're doing better than you think! 😊",
+            "You bring joy just by being you! 🌟"
+        ];
+        let randomIndex = Math.floor(Math.random() * compliments.length);
+        alert(compliments[randomIndex]);
+    }
+
+    // Adding event listener to the Compliment Button
+    document.addEventListener("DOMContentLoaded", function () {
+        document.getElementById("complimentButton").addEventListener("click", showCompliment);
+    });
+
+    // Animated fade-in effect
+    document.addEventListener("DOMContentLoaded", function () {
+        let elements = document.querySelectorAll(".fade-in");
+        elements.forEach(element => {
+            element.style.opacity = 0;
+            setTimeout(() => {
+                element.style.transition = "opacity 1s ease-in-out";
+                element.style.opacity = 1;
+            }, 500);
+        });
+    });
+
+
+</script>
+<!-- Adding Compliment Button -->
+    <button id="complimentButton" class="fade-in">Get a Compliment! 💌</button>
+</body>
+</html>
