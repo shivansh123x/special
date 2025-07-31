@@ -3,116 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome, Bestie!</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Pokachan’s Cozy Corner 🌸</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background: linear-gradient(to right, #000000, #8B0000); /* Black to Crimson Red */
+            color: #f9f9f9;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            padding: 30px;
+        }
+
+        h1, h2 {
+            color: #ff90b3;
+        }
+
+        .gallery, .places, .foods {
+            margin: 40px auto;
+            padding: 20px;
+            background: #1a1a1a;
+            border-radius: 20px;
+            width: 90%;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+        }
+
+        .place, .food-item {
+            margin-top: 30px;
+        }
+
+        img {
+            border-radius: 20px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+            max-width: 100%;
+        }
+
+        button {
+            margin: 20px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 25px;
+            background-color: #ff90b3;
+            color: white;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #e75480;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            font-size: 1.2rem;
+        }
+
+        li {
+            margin: 10px 0;
+        }
+
+        .fade-in {
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Welcome, Tessa!</h1>
-        <p>While you were not awake, I made this in my free time. Hope it makes you smile!</p>
+    <h3 style="text-align: right;"background-color="Black">made by Rick</h3>
+    <div class="container fade-in">
+        <h1>💖 Welcome, Pokachan 😆</h1>
+        <p>This cozy little space was made just for you. Hope it brings a warm smile 🌸</p>
 
         <h2>How are you feeling today?</h2>
         <form>
-            <label>
-                <input type="radio" name="mood" value="happy"> Happy 😊
-            </label>
-            <label>
-                <input type="radio" name="mood" value="sad"> Sad 😔
-            </label>
+            <label><input type="radio" name="mood" value="happy"> Happy 😊</label>
+            <label><input type="radio" name="mood" value="sad"> Sad 😔</label>
         </form>
+        <button id="complimentButton">Get a Compliment 💌</button>
     </div>
 
-    <div class="gallery">
-       <h2>here some coffee for you 😆</h2>
-        <img src="https://static.vecteezy.com/system/resources/previews/049/632/997/non_2x/heart-shaped-latte-art-in-a-white-cup-with-coffee-beans-isolated-on-wooden-table-side-view-of-taiwan-baked-food-photo.jpg" height="400" alt="Heart-shaped coffee latte">
-        
+    <div class="gallery fade-in">
+        <h2>Here’s some tea for you 🍵💗</h2>
+        <img src="https://www.sharmispassions.com/wp-content/uploads/2012/12/cardamom-tea3.jpg" height="300" alt="Aesthetic cup of tea">
+        <p>Because you love tea more than coffee ☕❤️</p>
     </div>
 
-    <div class="places">
-        <h1>The places you want to visit 💗</h1>
+    <div class="foods fade-in">
+        <h2>Your Favorite Foods 🍽️</h2>
+        <ul>
+            <li>🧀 Paneer</li>
+            <li>🌰 Pani Puri</li>
+            <li>🍗 Biriyani</li>
+        </ul>
+    </div>
+
+    <div class="places fade-in">
+        <h1>Places You Want to Visit 🌍✨</h1>
 
         <div class="place">
-            <h2>Carolina Beach</h2>
-            <p>Carolina Beach is a town on the coast of North Carolina. Along the Cape Fear River, Carolina Beach State Park is home to fishing spots and the Flytrap Trail, named for the carnivorous plants along its path.</p>
-            <img src="https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcS81Bbx6fkkJPLevOd6uFT5oqeDYgSoPG9Eauid4cFdT3T_fY7LsOMRiP0TkVW9yPEn9wJlyjLekY4sJbrp3Rsou6Q2AiQNNld1aiqGYA" height="300" alt="Carolina Beach">
+            <h2>Japan 🇯🇵</h2>
+            <p>Cherry blossoms, anime vibes, and peaceful temples. A dream destination!</p>
+            <img src="https://assets.vogue.in/photos/6687b953289b94502f6c9f15/3:4/w_2560%2Cc_limit/1029818226" height="250">
         </div>
 
         <div class="place">
-            <h2>Myrtle Beach</h2>
-            <p>Myrtle Beach, a city and vacation resort on South Carolina’s Atlantic coast, is the hub of the Grand Strand, a 60-mile string of beaches. It’s also known for its celebrity-designed golf courses. Along its beachfront boardwalk are arcades, souvenir stands, and restaurants, as well as the old-fashioned Family Kingdom amusement park and the SkyWheel, one of the country’s tallest Ferris wheels.</p>
-            <img src="https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcTncmNvsjzpKcOa52X3_e8C9oMJVjGIOFAGKhuBjU_93PX7TR0TnG43_0f-kq-yRxH2D5uwU9dE94NCXJuLZh-SWZL1ErUt9bDc-axL0A" height="300" alt="Myrtle Beach">
+            <h2>Russia ❄️</h2>
+            <p>Snowy beauty, rich culture, and stunning architecture. A majestic place to explore!</p>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8ORGHbblrT5f2ndZhO3K3Hio__dFkzs5mXw&s" height="250">
+        </div>
+
+        <div class="place">
+            <h2>Rajasthan 🏜️</h2>
+            <p>Colorful palaces, golden deserts, and royal vibes of India’s heritage land.</p>
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/011/084/232/small_2x/full-picture-of-hawa-mahal-of-rajasthan-photo.jpg" height="270">
         </div>
     </div>
+
     <script>
-        function redirectToPlace(event) {
-            event.preventDefault();
-            let inputText = document.getElementById("inputText").value.toLowerCase();
-            
-            if (inputText.includes("carolina")) {
-                window.location.href = "carolina.html";
-            } else if (inputText.includes("myrtle")) {
-                window.location.href = "myrtle.html";
-            } else {
-                alert("Please enter a recognized place!");
-            }
-        }
-        
-    function redirectToPlace(event) {
-        event.preventDefault(); // Prevents default form submission
+        document.addEventListener("DOMContentLoaded", function () {
+            alert("Hey Pokachan! You're amazing, and this little site is your digital hug 💖");
 
-        let inputText = document.getElementById("inputText").value.toLowerCase();
-
-        if (inputText.includes("carolina")) {
-            window.location.href = "carolina.html";
-        } else if (inputText.includes("myrtle")) {
-            window.location.href = "myrtle.html";
-        } else {
-            alert("Always here for you 😊");
-        }
-    }
-
-    // Adding event listener to the submit button
-    document.addEventListener("DOMContentLoaded", function () {
-        document.querySelector("button[type='submit']").addEventListener("click", redirectToPlace);
-    });
-
-    // Personalized welcome message on page load
-    document.addEventListener("DOMContentLoaded", function () {
-        alert("Hey Tessa! You're amazing, and I hope today brings you joy! 💖");
-    });
-
-    // Compliment Generator
-    function showCompliment() {
-        const compliments = [
-            "Your smile brightens the world! ✨",
-            "You are loved and appreciated! 💕",
-            "You're doing better than you think! 😊",
-            "You bring joy just by being you! 🌟"
-        ];
-        let randomIndex = Math.floor(Math.random() * compliments.length);
-        alert(compliments[randomIndex]);
-    }
-
-    // Adding event listener to the Compliment Button
-    document.addEventListener("DOMContentLoaded", function () {
-        document.getElementById("complimentButton").addEventListener("click", showCompliment);
-    });
-
-    // Animated fade-in effect
-    document.addEventListener("DOMContentLoaded", function () {
-        let elements = document.querySelectorAll(".fade-in");
-        elements.forEach(element => {
-            element.style.opacity = 0;
-            setTimeout(() => {
-                element.style.transition = "opacity 1s ease-in-out";
-                element.style.opacity = 1;
-            }, 500);
+            document.getElementById("complimentButton").addEventListener("click", function () {
+                const compliments = [
+                    "You're a beautiful soul inside and out ✨",
+                    "Your vibe is like warm tea on a rainy day 🍵",
+                    "The world’s better because you’re in it 💫",
+                    "You bring joy just by being you 🌸",
+                    "You’re as precious as your favorite food 😋"
+                ];
+                let randomIndex = Math.floor(Math.random() * compliments.length);
+                alert(compliments[randomIndex]);
+            });
         });
-    });
-
-
-</script>
-<!-- Adding Compliment Button -->
-    <button id="complimentButton" class="fade-in">Get a Compliment! 💌</button>
+    </script>
 </body>
 </html>
